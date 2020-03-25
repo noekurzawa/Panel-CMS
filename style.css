@@ -1,43 +1,43 @@
-*{
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-html{
-    font-size: 10px;
+html {
+    font-size: 62.5%;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
     background-color: #181D23;
 }
 
-.active{
+.active {
     background-color: rgba(255, 255, 255, .2);
 }
 
-.panel{
-    height: 100rem;
-    width: 160rem;
-    margin: 5rem 3rem;
+.panel {
+    width: 1600px;
+    height: 1000px;
     border: 1px solid #4B5769;
     border-radius: 15px;
     overflow: hidden;
 }
 
-.panel-left{
+.panel-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #485769;
+    background-color: #4B5769;
 }
 
-.date-box{
+/* ------------------------ */
+.date-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,34 +59,32 @@ body{
     font-size: 1.8rem;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 70rem;
+    height: 700px;
 }
 
-.menu a{
+.menu a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 30%;
     width: 100%;
+    height: 30%;
+    color: #fff;
     text-decoration: none;
     border: 1px solid #ddd;
     border-radius: 15px;
 }
 
-// .panel-right{
-//     background-image: linear-gradient(180deg, rgba(55,64,76,1) 0% rgba(21,26,32,1) 100%);
-// }
-.menu a:hover{
+.menu a:hover {
     background-image: linear-gradient(160deg, rgba(0, 110, 255, .25) 0%, rgba(9, 255, 0, 0.25) 100%);
 }
 
 .menu-item i {
-    font-size: 5rem;
+    font-size: 6rem;
     margin-bottom: .4em;
 }
 
