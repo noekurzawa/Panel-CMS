@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+}
+
+.panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100rem;
+  width: 160rem;
+}
+
+.panel .panel .menu-box {
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.panel .panel .menu-box:hover {
+  color: #202020;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+}
+
+.panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100rem;
+    width: 160rem;
+
+    .panel{
+        .menu-box{
+            transition: .3s;
+            cursor: pointer;
+        }
+        
+        .menu-box:hover{
+            color: rgb(32, 32, 32);
+        }
+    }
+}
