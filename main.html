@@ -9,12 +9,13 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
         rel="stylesheet">
+        <!-- <script src="/js/main.js"></script> -->
+        <link rel="stylesheet" href="./js/main.js">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/c89b3bee8a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <div class="panel">
         <div class="row m-0 h-100">
             <div class="col-2 p-0 px-4 panel-left">
@@ -49,41 +50,133 @@
                 </section>
             </div>
             <div class="panel-right col-10 p-0">
-                <div class="col-9 mt-5">
-                    <section class="main-stats text-center text-light py-4 px-5">
-                        <h1 class=" mb-5">main statistics</h1>
-                        <div class="row mb-5">
-                            <div class="col-4">
-                                <div class="main-start-box py-5 border text-center py-5">
-                                    <h4 class="text-uppercase">posts</h4>
-                                    <p class="mb-0">Total: 4.250.120</p>
-                                    <p class="mb-0">May: 125.703</p>
+                <div class="row">
+                    <div class="col-9 mt-5">
+                        <section class="main-stats text-center text-light py-4 px-5">
+                            <h1 class=" mb-5">main statistics</h1>
+                            <div class="row mb-5">
+                                <div class="col-4">
+                                    <div class="main-start-box py-5 border text-center">
+                                        <h4 class="text-uppercase">posts</h4>
+                                        <p class="mb-0">Total: 4.250.120</p>
+                                        <p class="mb-0">May: 125.703</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="main-start-box py-5 border text-center py-5">
-                                    <h4 class="text-uppercase">topics</h4>
-                                    <p class="mb-0">Total: 4.250.120</p>
-                                    <p class="mb-0">May: 125.703</p>
+                                <div class="col-4">
+                                    <div class="main-start-box py-5 border text-center py-5">
+                                        <h4 class="text-uppercase">topics</h4>
+                                        <p class="mb-0">Total: 4.250.120</p>
+                                        <p class="mb-0">May: 125.703</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="main-start-box py-5 border text-center py-5">
-                                    <h4 class="text-uppercase">users</h4>
-                                    <p class="mb-0">Total: 4.250.120</p>
-                                    <p class="mb-0">May: 125.703</p>
+                                <div class="col-4">
+                                    <div class="main-start-box py-5 border text-center py-5">
+                                        <h4 class="text-uppercase">users</h4>
+                                        <p class="mb-0">Total: 4.250.120</p>
+                                        <p class="mb-0">May: 125.703</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </section>
+                            <div id="chart" class="py-5 mx-5 text-dark"></div>
+                    <section class="post-history">
+                        <div class="table-responsive-lg py-4 px-5">
+                            <div class="input-group-append d-flex justify-content-between mb-2">
+                                <h3 class="text-light mb-0">Last posts</h3>
+                                <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort</button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">By date</a>
+                                  <a class="dropdown-item" href="#">By author</a>
+                                </div>
+                              </div>
+                            <table class="table table-hover table-dark">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Text</th>
+                                        <th scope="col">User</th>
+                                        <th scope="col">Data</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Lorem, ipsum dolor.</td>
+                                        <td>Otto</td>
+                                        <td>20/03/2020</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                        <td>Thornton</td>
+                                        <td>10/03/2020</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>Lorem ipsum dolor sit amet consectetur.</td>
+                                        <td>The Bird</td>
+                                        <td>15/03/2020</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <div class="pagination d-flex justify-content-center align-items-center">
+                                  <nav aria-label="Page navigation example">
+                                    <ul class="pagination py-4 ">
+                                      <li class="page-item ">
+                                        <a class="page-link bg-dark text-light" href="#" aria-label="Previous">
+                                          <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link bg-dark text-light" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link bg-dark text-light" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link bg-dark text-light" href="#">3</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link text-light bg-dark" href="#" aria-label="Next">
+                                          <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                                </div>
+                        </div>
                     </section>
                 </div>
-
-
-                <section class="statistics"></section>
-                <section class="post-history"></section>
+    
+    
+                <div class="col-3 text-light text-center mt-5">
+                        <section class="text-logo-top">
+                            <p class="display-4"><i class="far fa-gem mr-4"></i>Diamond</p>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </section>
+                        <section>
+                            <h3 class="text-uppercase">users online</h3>
+                            <p class="display-4">54</p>
+                        </section>
+                        <section>
+                            <div class="row d-flex justify-content-around">
+                                <div class="male">
+                                    <p class="text-uppercase">male</p>
+                                    <p><i class="fas fa-male"></i></p>
+                                    <p>52%</p>
+                                </div>
+                                <div class="female">
+                                    <p class="text-uppercase">female</p>
+                                    <p><i class="fas fa-female"></i></p>
+                                    <p>48%</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="statistics">
+                        </section>
+                        
+                    </div>
+                </div>
             </div>
+
+
+        </div>
         </div>
     </div>
-    </div>
+</body>
 
 
 
@@ -97,6 +190,45 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>var options = {
+          series: [{
+          name: 'active users',
+          data: [31, 40, 28, 51, 42, 109, 100]
+        }, {
+          name: 'posts',
+          data: [11, 32, 45, 32, 34, 52, 41]
+        }],
+          chart: {
+          height: 350,
+          type: 'area',
+          foreColor: '#fff',
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'smooth'
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+        },
+        tooltip: {
+          x: {
+            format: 'dd/MM/yy HH:mm'
+          },
+        },
+        legend:{
+            show:false
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+      
+      
+    </script>
 </body>
 
 </html>

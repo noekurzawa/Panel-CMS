@@ -141,14 +141,14 @@ body {
 }
 
 .panel-right .main-start-box {
-  border-radius: 10px;
-  cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
+  height: 140px;
+  border-radius: 15px;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
 }
 
 .panel-right .main-start-box:hover {
-  background-color: #4b5769;
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .panel-right h1 {
@@ -156,5 +156,19 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 2.4rem;
+}
+
+.post-history .btn {
+  color: #ddd;
+  border: 1px solid #dee2e6;
+  background-color: #343a40;
+}
+
+.post-history .btn:hover {
+  background-color: transparent;
+}
+
+.post-history table {
+  background-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */
