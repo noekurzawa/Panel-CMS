@@ -9,8 +9,8 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
     rel="stylesheet">
-  <link rel="stylesheet" href="./js/main.js">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <link rel="stylesheet" href="./css/posts.css">
   <link rel="stylesheet" href="./css/main.css">
   <script src="https://kit.fontawesome.com/c89b3bee8a.js" crossorigin="anonymous"></script>
@@ -53,69 +53,275 @@
 
 
 
-        <div class="panel-right col-10 p-0">
-            <div class="row w-100">
-                <div class="col-12 text-center text-light py-5">
-                    <section class="info-top">
-                        <h1>Posts</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, reiciendis.</p>
-                    </section>
+      <div class="panel-right col-10 p-0">
+        <div class="row w-100">
+          <div class="col-12 text-center text-light py-5">
+            <section class="info-top">
+              <h1>Posts</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, reiciendis.</p>
+            </section>
 
-                    <section class="featured post-slick py-5">
-                        <h3 class="font-weight-bold text-uppercase">featured posts</h3>
-                        <div class="container">
-                            <div class="post-carousel">
-                                <div class="card bg-transparent border-white featured-post">
-                                    <p class="card-title">Topic:</p>
-                                    <p class="text-muted">#topic-name</p>
-                                    <p class="card-text"><strong>Info:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus veritatis magnam!</p>
-                                    
+            <section class="featured post-slick py-5">
+              <h3 class="font-weight-bold text-uppercase">featured posts</h3>
+              <div class="container">
+                <div class="post-carousel">
 
-<button type="button" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#exampleModalCenter">
-    See post
-  </button>
-  
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body text-dark text-left">
-            <div class="modal-box">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Name:</h5>
-                <p>Tittle name</p>
-            </div>
 
-            <div class="modal-box">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Content:</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, beatae tempore.</p>
-            </div>
+                  <div class="card bg-transparent border-white featured-post">
+                    <p class="card-title">Topic:</p>
+                    <p class="text-muted">#topic-name</p>
+                    <p class="card-text"><strong>Info:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ducimus natus veritatis magnam!</p>
+                    <button type="button" class="btn btn-primary text-uppercase" data-toggle="modal"
+                      data-target="#exampleModalCenter">
+                      See post
+                    </button>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body text-dark text-left">
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Name:</h5>
+                              <p>Tittle name</p>
+                            </div>
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Content:</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, beatae tempore.</p>
+                            </div>
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Options:</h5>
+                              <p>Tittle name</p>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-            <div class="modal-box">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Options:</h5>
-                <p>Tittle name</p>
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+
+                  <div class="card bg-transparent border-white featured-post">
+                    <p class="card-title">Topic:</p>
+                    <p class="text-muted">#topic-name</p>
+                    <p class="card-text"><strong>Info:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ducimus natus veritatis magnam!</p>
+                    <button type="button" class="btn btn-primary text-uppercase" data-toggle="modal"
+                      data-target="#exampleModalCenter">
+                      See post
+                    </button>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body text-dark text-left">
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Name:</h5>
+                              <p>Tittle name</p>
+                            </div>
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Content:</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, beatae tempore.</p>
+                            </div>
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Options:</h5>
+                              <p>Tittle name</p>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card bg-transparent border-white featured-post">
+                    <p class="card-title">Topic:</p>
+                    <p class="text-muted">#topic-name</p>
+                    <p class="card-text"><strong>Info:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ducimus natus veritatis magnam!</p>
+                    <button type="button" class="btn btn-primary text-uppercase" data-toggle="modal"
+                      data-target="#exampleModalCenter">
+                      See post
+                    </button>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body text-dark text-left">
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Name:</h5>
+                              <p>Tittle name</p>
+                            </div>
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Content:</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, beatae tempore.</p>
+                            </div>
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Options:</h5>
+                              <p>Tittle name</p>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card bg-transparent border-white featured-post">
+                    <p class="card-title">Topic:</p>
+                    <p class="text-muted">#topic-name</p>
+                    <p class="card-text"><strong>Info:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ducimus natus veritatis magnam!</p>
+                    <button type="button" class="btn btn-primary text-uppercase" data-toggle="modal"
+                      data-target="#exampleModalCenter">
+                      See post
+                    </button>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body text-dark text-left">
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Name:</h5>
+                              <p>Tittle name</p>
+                            </div>
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Content:</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, beatae tempore.</p>
+                            </div>
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Options:</h5>
+                              <p>Tittle name</p>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card bg-transparent border-white featured-post">
+                    <p class="card-title">Topic:</p>
+                    <p class="text-muted">#topic-name</p>
+                    <p class="card-text"><strong>Info:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ducimus natus veritatis magnam!</p>
+                    <button type="button" class="btn btn-primary text-uppercase" data-toggle="modal"
+                      data-target="#exampleModalCenter">
+                      See post
+                    </button>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body text-dark text-left">
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Name:</h5>
+                              <p>Tittle name</p>
+                            </div>
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Content:</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, beatae tempore.</p>
+                            </div>
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Options:</h5>
+                              <p>Tittle name</p>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card bg-transparent border-white featured-post">
+                    <p class="card-title">Topic:</p>
+                    <p class="text-muted">#topic-name</p>
+                    <p class="card-text"><strong>Info:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ducimus natus veritatis magnam!</p>
+                    <button type="button" class="btn btn-primary text-uppercase" data-toggle="modal"
+                      data-target="#exampleModalCenter">
+                      See post
+                    </button>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body text-dark text-left">
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Name:</h5>
+                              <p>Tittle name</p>
+                            </div>
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Content:</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, beatae tempore.</p>
+                            </div>
+                            <div class="modal-box">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Options:</h5>
+                              <p>Tittle name</p>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
     </div>
   </div>
 
@@ -131,7 +337,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
   integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 </script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="./js/main.js"></script>
 </body>
 
