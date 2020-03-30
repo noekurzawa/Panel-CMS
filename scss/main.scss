@@ -141,3 +141,24 @@ body {
   }
 }
 
+section{
+  .male{
+    .fas{
+      box-shadow: 0px 0px 9px 1px green;
+    }
+  }
+
+  .female{
+    .fas{
+      box-shadow: 0px 0px 9px 1px blue;
+    }
+  }
+}
+
+.dropdown{
+  .btn{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+  }
+}
