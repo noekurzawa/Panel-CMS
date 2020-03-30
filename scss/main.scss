@@ -144,13 +144,13 @@ body {
 section{
   .male{
     .fas{
-      box-shadow: 0px 0px 9px 1px green;
+      text-shadow: 0px 0px 10px green;
     }
   }
 
   .female{
     .fas{
-      box-shadow: 0px 0px 9px 1px blue;
+      text-shadow: 0px 0px 10px blue;
     }
   }
 }
@@ -160,5 +160,19 @@ section{
     width: 100%;
     background-color: transparent;
     border: 1px solid white;
+  }
+
+  .btn:hover{
+    background-color: #343a40;
+  }
+}
+
+.dropdown-item:hover{
+  background-color: rgba(128, 128, 128, 0.7)
+}
+
+.text-logo-top{
+  i{
+    text-shadow: 0 0 10px #fff;
   }
 }
