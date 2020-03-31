@@ -1,0 +1,25 @@
+.list-group-item:hover {
+    background-image: linear-gradient(160deg,
+            rgba(0, 110, 255, 0.25) 0%,
+            rgba(9, 255, 0, 0.25) 100%);
+}
+
+.pagination{
+.page-item,.page-link{
+    color: #fff;
+}
+
+    .page-item:hover, .page-link:hover{
+        background-color: #343a40;
+    }
+}
+
+.form-group{
+    label{
+        margin-bottom: 0;
+    }
+
+    input{
+        height: 3rem;
+    }
+}
