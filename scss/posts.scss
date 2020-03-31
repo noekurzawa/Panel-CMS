@@ -1,0 +1,28 @@
+
+.post-carousel{
+    .card:hover{
+        background-image: linear-gradient(160deg,
+            rgba(0, 110, 255, 0.25) 0%,
+            rgba(9, 255, 0, 0.25) 100%);
+      }
+}
+
+
+.album{
+
+    .card{
+        width: 330px;
+    }
+
+    img{
+        height: 200px;
+        width: 330px;
+    }
+
+    .card-body{
+        background-image: linear-gradient(180deg,
+        rgba(55, 64, 76, 1) 0%,
+        rgba(21, 26, 32, 1) 100%);
+        background-attachment: fixed;
+    }
+}
